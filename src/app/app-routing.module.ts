@@ -9,7 +9,8 @@ const routes: Routes = [
  {path: 'tareas', loadChildren: './tareas/tareas.module#TareasModule' },
  {path: 'contactos', loadChildren: './contactos/contactos.module#ContactosModule' },
  {path: 'libros', loadChildren: './libros/libros.module#LibrosModule' },
- {path: '', pathMatch: 'full', redirectTo: 'home'}
+ {path: '', pathMatch: 'full', redirectTo: 'home'},
+ {path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
 @NgModule({
